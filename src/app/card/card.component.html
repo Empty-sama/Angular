@@ -1,0 +1,7 @@
+<div class="card-title">
+    {{ cardIndex() || '' + ' ' + card().title}}
+</div>
+<img class="card-image" [src]="card().image" width="200" height="150" />
+<div class="card-description">
+    {{ card().description }}
+</div>

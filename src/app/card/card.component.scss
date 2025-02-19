@@ -1,0 +1,38 @@
+$text-color: #ffffff;
+$background-color: darkslategrey;
+
+:host {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    // width: 25%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    // display: grid;
+    // grid-template-columns: auto 1fr;
+    // grid-template-areas: 
+    //     'image title' 
+    //     'image description';
+} :hover {
+    background-color: $background-color;
+}
+
+.card-image {
+    grid-area: image;
+    object-fit: cover;
+}
+
+.card-title {
+    grid-area: title;
+    font-size: 30px;
+    text-decoration: underline;
+    color: $text-color;
+}
+
+.card-description {
+    grid-area: description;
+    font-size: 20px;
+    text-decoration: none;
+    color: $text-color;
+}

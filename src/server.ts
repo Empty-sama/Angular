@@ -37,6 +37,10 @@ app.use(
   }),
 );
 
+app.use("/app", (req, res, next) => {
+  res.send("hello")
+});
+
 /**
  * Handle all other requests by rendering the Angular application.
  */
