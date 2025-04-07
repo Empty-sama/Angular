@@ -1,0 +1,42 @@
+.menu {
+    display: inline-grid;
+    flex-direction: column;
+    // min-width: 180px;
+    width: 260px;
+    height: 100%;
+    background-color: black;
+    padding: 6px 0;
+    border: 2px solid #3b3a3a;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.standalone-trigger {
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: none;
+    user-select: none;
+    min-width: 45px;
+    line-height: 36px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+}
+
+.menu-item {
+    color:rgb(208, 208, 208);
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.menu-item:hover {
+    background-color: rgb(208, 208, 208);
+}
+
+.menu-item:active {
+    background-color: rgb(170, 170, 170);
+}
+

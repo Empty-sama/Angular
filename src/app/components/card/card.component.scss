@@ -4,23 +4,25 @@ $background-color: darkslategrey;
 :host {
     border: 1px solid #ffffff;
     border-radius: 5px;
-    // width: 25%;
+    margin: 10px;
     background-color: transparent;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    // display: grid;
-    // grid-template-columns: auto 1fr;
-    // grid-template-areas: 
-    //     'image title' 
-    //     'image description';
-} :hover {
+    min-width: 200px;
+    max-width: 12000px;
+} 
+
+:host:hover {
     background-color: $background-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .card-image {
     grid-area: image;
     object-fit: cover;
+    margin:auto;
+    width: 100%;
 }
 
 .card-title {

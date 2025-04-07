@@ -1,0 +1,11 @@
+<head>
+  <title>HOME</title>
+</head>
+
+<div class="cards">
+  @for (card of cards; track card.id) {
+  <div class="card">
+    <app-card [card]="card" />
+  </div>
+  }
+</div>

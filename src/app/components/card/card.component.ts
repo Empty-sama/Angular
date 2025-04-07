@@ -1,5 +1,5 @@
-import { Component, computed, input, Input, OnInit } from '@angular/core';
-
+import { Component, computed, input, OnInit } from '@angular/core';
+import { Card } from '../../interfaces';
 
 @Component({
   selector: 'app-card',
@@ -19,11 +19,4 @@ export class CardComponent implements OnInit {
   ngOnInit() {
 
   }
-}
-
-export interface Card {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
 }

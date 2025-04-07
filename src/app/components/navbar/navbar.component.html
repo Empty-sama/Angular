@@ -1,0 +1,29 @@
+<header class="navbar">
+    <nav class="navbut">
+        <button [cdkMenuTriggerFor]="menu" class="standalone-trigger"><img class="meni-icon" src="bars-solid.svg" width="35" height="35" /></button>
+
+        <ng-template #menu>
+            <div class="menu" cdkMenu>
+                <a class="menu-item" routerLink="/">
+                    <img class="card-image" src="house-solid.svg" width="33" height="33" />
+                    Home
+                </a>
+                <a class="menu-item" routerLink="/info">
+                    <img class="card-image" src="info-solid.svg" width="33" height="33" />
+                    Info
+                </a>
+                <a class="menu-item" routerLink="/contact">
+                    <img class="card-image" src="mobile-solid.svg" width="33" height="33" />
+                    Contact
+                </a>
+                <a class="menu-item" routerLink="/contact/sales">
+                    <img class="card-image" src="headset-solid.svg" width="33" height="33" />
+                    Contact Sales
+                </a>
+                <a class="menu-item" routerLink="/contact/company">
+                    <img class="card-image" src="building-solid.svg" width="33" height="33" />
+                    Contact head Office</a>
+            </div>
+        </ng-template>
+    </nav>
+</header>

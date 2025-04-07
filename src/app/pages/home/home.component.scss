@@ -1,0 +1,13 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.card {
+    min-width: 340px;
+    max-width: 340px;
+    padding: 0px 8px;
+}

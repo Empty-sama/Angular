@@ -1,0 +1,9 @@
+<div class="button_container" onclick="">
+    <div class="card-title">
+        {{ cardIndex() || '' + ' ' + card().brand + ' ' + card().model }}
+    </div>
+    <img class="card-image" [src]="card().image" width="200" height="150" />
+    <div class="card-description">
+        {{ card().description }}
+    </div>
+</div>

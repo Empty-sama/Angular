@@ -1,13 +1,5 @@
 <app-navbar />
 <div class="main">
-
-  <h1>Online BMW store!</h1>
-
-  <div class="cards">
-    @for (card of cards; track card.id) {
-    <div class="card">
-      <app-card [card]="card" />
-    </div>
-    }
-  </div>
+  <img class="logo" src="logo.png" width="120" height="120" />
+  <router-outlet />
 </div>
